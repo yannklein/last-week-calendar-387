@@ -1,3 +1,22 @@
+.cards-last-week {
+  display: grid;
+  grid-gap: 16px;
+  margin: 16px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-flow: column;
+}
+
+.cards-lectures {
+  display: grid;
+  grid-gap: 16px;
+  margin: 16px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-flow: column;
+}
+
+
 .card-schedule {
   overflow: hidden;
   height: 100px;
@@ -110,7 +129,7 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .card-schedule {
     height: 92px;
   }
@@ -128,3 +147,20 @@
   .card-schedule-infos {
     padding: 8px;
   }
+
+@media screen and (max-width: 1000px) {
+  .cards-last-week {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(29, 1fr);
+  }
+
+  .cards-lectures {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .card-day {
+    display: none;
+  }
+
+}
