@@ -151,7 +151,7 @@
 @media screen and (max-width: 1000px) {
   .cards-last-week {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(29, 1fr);
+    grid-template-rows: repeat(25, 1fr);
   }
 
   .cards-lectures {
