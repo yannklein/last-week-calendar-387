@@ -1,17 +1,17 @@
-.card-product {
+.card-schedule {
   overflow: hidden;
-  height: 120px;
+  height: 100px;
   background: white;
   box-shadow: 0 0 16px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
 }
 
-.card-product.today {
+.card-schedule.today {
   box-shadow: 0 0 24px rgba(255, 0, 0, 0.8);
 }
 
-.card-product-daytime {
+.card-schedule-daytime {
   height: 100%;
   min-width: 92px;
   background-size: cover;
@@ -22,19 +22,19 @@
   background-color: #FD0F14;
 }
 
-.card-product-daytime p {
+.card-schedule-daytime p {
   color: white;
   font-weight: bolder;
   font-size: 24px;
   margin: 0;
 }
 
-.card-product-infos {
+.card-schedule-infos {
   height: 100%;
   padding: 16px;
 }
 
-.card-product-infos h2 {
+.card-schedule-infos h2 {
   font-size: 16px;
   font-weight: bold;
   margin: 0;
@@ -42,15 +42,15 @@
 }
 
 
-.card-product-infos h2.key-day {
+.card-schedule-infos h2.key-day {
   color: red;
 }
 
-.card-product-infos a {
+.card-schedule-infos a {
   text-decoration: none;
 }
 
-.card-product-infos p {
+.card-schedule-infos p {
   font-size: 12px;
   line-height: 1.4;
   opacity: .7;
@@ -60,7 +60,7 @@
 }
 
 
-.card-product-titles {
+.card-schedule-titles {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -70,61 +70,61 @@
   background-color: rgba(253, 15, 20,0.2);
 }
 
-.card-product-titles h2 {
+.card-schedule-titles h2 {
   font-size: 24px;
   margin: 0;
 }
 
-.card-product-titles p {
+.card-schedule-titles p {
   margin: 0;
 }
 
 @media screen and (max-width: 1200px) {
-  .card-product-titles h2 {
+  .card-schedule-titles h2 {
     font-size: 16px;
   }
-  .card-product-infos h2 {
+  .card-schedule-infos h2 {
     font-size: 12px;
   }
-  .card-product-infos p {
+  .card-schedule-infos p {
     font-size: 10px;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  .card-product-titles h2 {
+  .card-schedule-titles h2 {
     font-size: 24px;
   }
-  .card-product-infos h2 {
+  .card-schedule-infos h2 {
     font-size: 16px;
   }
-  .card-product-infos p {
+  .card-schedule-infos p {
     font-size: 12px;
   }
 
   .day-slot {
     display: none;
   }
-  .card-product-daytime {
+  .card-schedule-daytime {
     display: flex;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .card-product {
+  .card-schedule {
     height: 92px;
   }
 
-  .card-product-titles h2 {
+  .card-schedule-titles h2 {
     font-size: 32px;
   }
-  .card-product-infos h2 {
+  .card-schedule-infos h2 {
     font-size: 20px;
   }
-  .card-product-infos p {
+  .card-schedule-infos p {
     font-size: 16px;
   }
 
-  .card-product-infos {
+  .card-schedule-infos {
     padding: 8px;
   }

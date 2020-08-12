@@ -1,25 +1,27 @@
 @import url(card.css);
 
 .title {
-  margin: 32px;
+  margin: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.title img {
-  margin-right: 24px;
-  width: 100px;
+.title h1 {
+  font-size: 32px;
 }
 
-
+.title img {
+  margin-right: 24px;
+  width: 64px;
+}
 
 .cards {
   display: grid;
   grid-gap: 16px;
   margin: 16px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-auto-flow: column;
 }
 
@@ -38,10 +40,7 @@
 @media screen and (max-width: 1000px) {
   .cards {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(28, 1fr);
-  }
-  .title h1 {
-    font-size: 32px;
+    grid-template-rows: repeat(39, 1fr);
   }
 }
 
