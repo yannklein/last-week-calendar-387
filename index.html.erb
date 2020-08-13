@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/3926274332.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Batch #387 | Career Week Calendar</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <img src="images/logo.png" alt="logo">
+        <h1>Batch #387 | Career week Calendar</h1>
+      </div>
+      <div class="section section-shortcut">
+        <h2>🍣 One the menu</h2>
+        <ul>
+          <li><a href="#lectures">Career Lectures</a></li>
+          <li><a href="#last-week">Last week calendar</a></li>
+          <li><a href="#one-to-one">One-to-one</a></li>
+        </ul>
+      </div>
+      <div id="lectures" class="section">
+        <h2>🏋️‍♂️ Career focused challenges</h2>
+        <p>Some homework to kickstart your career change. Delivered on <i class="fab fa-slack"></i></p>
+      </div>
+      <div class="cards-lectures">
+        <% career_days.each do |date, event| %>
+          <div class="card-schedule card-day">
+            <div class="card-schedule-titles">
+              <h2><%= date["day"] %></h2>
+              <p><%= date["date"] %></p>
+            </div>
+          </div>
+          <div class="card-schedule">
+            <div class="card-schedule-daytime">
+              <p><%= date["date"] %></p>
+            </div>
+            <div class="card-schedule-infos">
+              <h2><%= event["title"] %></h2>
+              <p><%= event["description"] %></p>
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <div id="last-week" class="section">
+        <h2>👩‍🎓 After Demo Day week planning</h2>
+        <p>A full set of resource for any career path during the week following Demo Day.</p>
+      </div>
+      <div class="cards-last-week">
+        <div class="day-slot">
+        </div>
+        <div class="card-schedule day-slot">
+          <div class="card-schedule-titles ">
+            <h2>From 11am</h2>
+          </div>
+        </div>
+        <div class="card-schedule day-slot">
+          <div class="card-schedule-titles ">
+            <h2>Noon</h2>
+          </div>
+        </div>
+        <div class="card-schedule day-slot">
+          <div class="card-schedule-titles ">
+            <h2>2 to 7pm</h2>
+          </div>
+        </div>
+        <div class="card-schedule day-slot">
+          <div class="card-schedule-titles ">
+            <h2>From 7pm</h2>
+          </div>
+        </div>
+
+        <div class="card-schedule">
+          <div class="card-schedule-titles">
+            <h2>Mon</h2>
+            <p>Aug 31th</p>
+          </div>
+        </div>
+        <div class="card-schedule">
+          <div class="card-schedule-daytime">
+            <p>11am</p>
+          </div>
+          <div class="card-schedule-infos">
+           <!--  <h2>Slack Challenge</h2>
+            <p>Portfolio</p> -->
+          </div>
+        </div>
+        <div class="card-schedule">
+          <div class="card-schedule-daytime">
+            <p>Noon</p>
+          </div>
+          <div class="card-schedule-infos">
+            <h2>Talk with <a href="https://impactech.com/">ImpacTech</a></h2>
+            <p>Grow your startup with an accelerator</p>
+          </div>
+        </div>
+        <div class="card-schedule">
+          <div class="card-schedule-daytime">
+            <p>Aft</p>
+          </div>
+          <div class="card-schedule-infos">
+            <h2>Recruter Q/A @2pm</h2>
+            <p>Meet <a href="https://www.computerfutures.com/ja-jp" target="_blank" >Computer Futures</a> agency</p>
+          </div>
+        </div>
+        <div class="card-schedule">
+          <div class="card-schedule-daytime">
+            <p>7pm~</p>
+          </div>
+          <div class="card-schedule-infos">
+            <h2>1st month as Web Dev</h2>
+            <p>Testimonial of pros about their first job</p>
+          </div>
+        </div>
+
+        <div class="card-schedule">
+          <div class="card-schedule-titles">
+            <h2>Tue</h2>
+            <p>Sep 1st</p>
+          </div>
+        </div>
+        <div class="card-schedule">
+          <div class="card-schedule-daytime">
+            <p>11am</p>
+          </div>
+        </div>
+        <div class="card-schedule">
+          <div class="card-schedule-daytime">
+            <p>Noon</p>
+          </div>
+        </div>
+        <div class="card-schedule">
+          <div class="card-schedule-daytime">
+            <p>Aft</p>
+          </div>
+        </div>
+        <div class="card-schedule">
+          <div class="card-schedule-daytime">
+            <p>7pm~</p>
+          </div>
+          <div class="card-schedule-infos">
+            <h2>Recruter Q/A</h2>
+            <p>Meet <a href="https://www.active-connector.com/" target="_blank" >Active Connector</a> agency</p>
+          </div>
+        </div>
+
+        <div class="card-schedule">
+          <div class="card-schedule-titles">
+            <h2>Wed</h2>
+            <p>Sep 2nd</p>
+          </div>
+        </div>
+        <div class="card-schedule">
+          <div class="card-schedule-daytime">
+            <p>11am</p>
+          </div>
+          <div class="card-schedule-infos">
+            <h2>🎤 Landing your first job</h2>
+            <p>From bootcamp to boot.life</p>
+          </div>
+        </div>
+        <div class="card-schedule">
+          <div class="card-schedule-daytime">
+            <p>Noon</p>
+          </div>
+        </div>
+        <div class="card-schedule">
+          <div class="card-schedule-daytime">
+            <p>Aft</p>
+          </div>
+        </div>
+        <div class="card-schedule">
+          <div class="card-schedule-daytime">
+            <p>7pm~</p>
+          </div>
+          <div class="card-schedule-infos">
+            <h2>React Workshop</h2>
+            <p>Introduction to React</p>
+          </div>
+        </div>
+
+        <div class="card-schedule">
+          <div class="card-schedule-titles">
+            <h2>Thu</h2>
+            <p>Sep 3rd</p>
+          </div>
+        </div>
+        <div class="card-schedule">
+          <div class="card-schedule-daytime">
+            <p>11am</p>
+          </div>
+          <div class="card-schedule-infos">
+            <h2>🎤 Tech interview & Code after LW</h2>
+            <p>Key tech tips and todos for after LW</p>
+          </div>
+        </div>
+        <div class="card-schedule">
+          <div class="card-schedule-daytime">
+            <p>Noon</p>
+          </div>
+        </div>
+        <div class="card-schedule">
+          <div class="card-schedule-daytime">
+            <p>Aft</p>
+          </div>
+        </div>
+        <div class="card-schedule">
+          <div class="card-schedule-daytime">
+            <p>7pm~</p>
+          </div>
+          <div class="card-schedule-infos">
+            <h2>Job fair</h2>
+            <p>Meet companies that hire Junior devs</p>
+          </div>
+        </div>
+
+
+        <div class="card-schedule">
+          <div class="card-schedule-titles">
+            <h2>Fri</h2>
+            <p>Sep 4th</p>
+          </div>
+        </div>
+        <div class="card-schedule">
+          <div class="card-schedule-daytime">
+            <p>11am</p>
+          </div>
+          <div class="card-schedule-infos">
+            <h2>📺 Freelancing</h2>
+            <p>Introduction to <a href="https://www.youtube.com/watch?v=y_VYKu5xB1o&t=3s" target="_blank" >freelancing</a></p>
+          </div>
+        </div>
+        <div class="card-schedule">
+          <div class="card-schedule-daytime">
+            <p>Noon</p>
+          </div>
+        </div>
+        <div class="card-schedule">
+          <div class="card-schedule-daytime">
+            <p>Aft</p>
+          </div>
+        </div>
+        <div class="card-schedule">
+          <div class="card-schedule-daytime">
+            <p>7pm~</p>
+          </div>
+        </div>
+      </div>
+      <div id="one-to-one" class="section">
+        <h2>💼 One-to-one career support</h2>
+        <p>Get our feedback for your career. Sylvain and the team have been helping students getting job for several years now. We have contacts and advice that could be key for your job hunting.</p>
+        <p><strong>One rule nevertheless:</strong> don't come without a CV, Portfolio, an idea of what you are searching for and some prior job hunting attempts. We're here to boost your search not search for you 🤓</p>
+        <a class="btn-danger btn btn-lg mb-5" href="https://lewagonjapan.typeform.com/to/OI1ihm">Register here</a>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
