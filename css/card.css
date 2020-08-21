@@ -78,6 +78,17 @@
   height: 3em;
 }
 
+.card-schedule-infos.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.card-schedule-infos.center h2 {
+  font-size: 24px;
+}
+
 
 .card-schedule-titles {
   display: flex;
