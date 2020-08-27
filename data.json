@@ -1,0 +1,13 @@
+{
+  "career_days": [
+    [{
+      "day": "Fri",
+      "date": "Aug 4th"
+    },
+    {
+      "title": "Super event",
+      "description": "Super description"
+    }]
+  ]
+}
+
